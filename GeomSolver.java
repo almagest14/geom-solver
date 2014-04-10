@@ -20,7 +20,7 @@ public class GeomSolver{
 			case 1: circleOption(); break;
 			case 2: TriangleOption();break;
 			case 3:
-			case 4:
+			case 4: rectangleOption(); break;
 			case 5: polygonOption(ch); break;
 			default: System.out.println("Shape not found.\nExiting...");  break;
 			
@@ -62,6 +62,18 @@ public class GeomSolver{
 		}		
 	
 	}//polygonOption
+	
+	public static void rectangleOption(){
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Find the \n<1>Area\n<2>Perimeter");
+		int ch = sc.nextInt();
+		switch(ch){
+			case 1: getRectangleArea(); break;
+			case 2: getRectanglePerimeter(); break;
+			default: System.out.println("Option not found. Exiting.."); break;
+		}
+	}//rectangleOption
 	
 	public static void getCircumference(){
 		System.out.println("Computing..");
@@ -146,11 +158,30 @@ public class GeomSolver{
 	}//getSquareArea
 	
 	public static void getRectanglePerimeter(){
+	double recWidth,recLength,recArea,recPerimeter;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter length: ");
+		recLength = sc.nextDouble();
+		System.out.println("Enter width: ");
+		recWidth = sc.nextDouble();
 		System.out.println("Computing..");
+		recPerimeter = (2*(recLength+recWidth));
+		System.out.println("The Perimeter is: ");
+		System.out.print(recPerimeter);
+		
 	}//getRectanglePerimeter
 	
 	public static void getRectangleArea(){
+	double recWidth,recLength,recArea,recPerimeter;
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("Enter length: ");
+		recLength = sc.nextDouble();
+		System.out.println("Enter width: ");
+		recWidth = sc.nextDouble();
 		System.out.println("Computing..");
+		recArea = (recLength * recWidth);
+		System.out.println("The Area is: ");
+		System.out.println(recArea);
 	}//getRectangleArea
 	
 	public static void getNGonPerimeter(){
