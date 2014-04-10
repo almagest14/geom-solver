@@ -1,7 +1,8 @@
 
-# AREA and PERIMETER SOLVER
+
+#SQUARE AREA and PERIMETER SOLVER
+
 
 
 
 This is a simple application that takes an input of a certain shape and computes the perimeter (or circumference) and area of that shape.
-
