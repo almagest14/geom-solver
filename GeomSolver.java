@@ -124,17 +124,13 @@ public class GeomSolver{
 	}//getTriangleArea
 	
 	public static void getSquarePerimeter(){
-<<<<<<< HEAD
 
 		System.out.println("Computing..");
 
-=======
->>>>>>> circle
 		
 		Scanner input = new Scanner(System.in);
  
 		System.out.print("Enter your square's side length: ");
-<<<<<<< HEAD
  double length = input.nextDouble();
   System.out.println("Your square's area is " + length*4);
 
@@ -147,26 +143,6 @@ public class GeomSolver{
 		System.out.print("Enter your square's side length: ");
  double length = input.nextDouble();
   System.out.println("Your square's area is " + length*length);
-=======
-		double length = input.nextDouble();
-  
-		
-		System.out.println("Your square's area is " + length*43);
-	}//getSquarePerimeter
-	
-	public static void getSquareArea(){
-		
-		Scanner input = new Scanner(System.in);
- 
-		System.out.print("Enter your square's side length: ");
-		double length = input.nextDouble();
-  
-		
-
-		System.out.println("Your square's area is " + length * length);
-		
-		
->>>>>>> circle
 	}//getSquareArea
 	
 	public static void getRectanglePerimeter(){
