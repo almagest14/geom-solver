@@ -111,11 +111,25 @@ public class GeomSolver{
 	}//getRectangleArea
 	
 	public static void getNGonPerimeter(){
-		System.out.println("Computing..");
+		NGon nm = new NGon();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("N-Gon Perimeter Calculator");
+		System.out.println("Enter # of sides:");
+		int n = sc.nextInt();
+		System.out.println("Enter measurement of each side: ");
+		double m = sc. nextDouble();
+		nm.getP(n,m);
 	}//getRectanglePerimeter
 	
 	public static void getNGonArea(){
-		System.out.println("Computing..");
+		NGon nm = new NGon();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("N-Gon Perimeter Calculator");
+		System.out.println("Enter # of sides:");
+		int n = sc.nextInt();
+		System.out.println("Enter measurement of each side: ");
+		double m = sc. nextDouble();
+		nm.getA(n,m);
 	}//getRectangleArea
 	
 	
