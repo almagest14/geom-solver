@@ -43,7 +43,7 @@ public class geomsolver{
 		catch(InputMismatchException ime) {
 		System.out.println("Invalid input. Try Again.");
 		in.next();
-		}
+		}:
 		
 		
 	}//getCircleArea
