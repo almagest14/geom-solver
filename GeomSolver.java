@@ -102,7 +102,7 @@ public class GeomSolver{
 		double length = input.nextDouble();
   
 		
-		System.out.println("Your square's area is " + length*43);
+		System.out.println("Your square's area is " + length*4);
 	}//getSquarePerimeter
 	
 	public static void getSquareArea(){
