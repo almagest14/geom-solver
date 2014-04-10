@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class geomsolver{
+public class GeomSolver{
 
 	public static void main(String argsss[]){
 	
@@ -54,28 +54,11 @@ public class geomsolver{
 	}//polygonOption
 	
 	public static void getCircumference(){
-		double diameter, circumf;
-		double pi = 3.1416;
-		Scanner in = new Scanner (System.in);
-		System.out.println("Computing for Circle's Circumference\n\n");
-		System.out.print("Enter diameter: ");
-		diameter = in.nextDouble();
-		circumf = pi*diameter;
 		System.out.println("Computing..");
-		System.out.println("The circle's circumference is: " + circumf);
-		
 	}//getCircumference
 	
 	public static void getCircleArea(){
-		double diameter, area;
-		double pi = 3.1416;
-		Scanner in = new Scanner (System.in);
-		System.out.println("Computing for Circle's Area\n\n");
-		System.out.print("Enter diameter: ");
-		diameter = in.nextDouble();
-		area = pi*(Math.pow((diameter/2), 2));
 		System.out.println("Computing..");
-		System.out.println("The circle's area is: " + area);
 	}//getCircleArea
 	
 	public static void getPolygonPerimeter(int sh){
@@ -112,11 +95,28 @@ public class geomsolver{
 	}//getTriangleArea
 	
 	public static void getSquarePerimeter(){
-		System.out.println("Computsg..");
+		
+		Scanner input = new Scanner(System.in);
+ 
+		System.out.print("Enter your square's side length: ");
+		double length = input.nextDouble();
+  
+		
+		System.out.println("Your square's area is " + length*43);
 	}//getSquarePerimeter
 	
 	public static void getSquareArea(){
-		System.out.println("Computing..");
+		
+		Scanner input = new Scanner(System.in);
+ 
+		System.out.print("Enter your square's side length: ");
+		double length = input.nextDouble();
+  
+		
+
+		System.out.println("Your square's area is " + length * length);
+		
+		
 	}//getSquareArea
 	
 	public static void getRectanglePerimeter(){
@@ -128,11 +128,25 @@ public class geomsolver{
 	}//getRectangleArea
 	
 	public static void getNGonPerimeter(){
-		System.out.println("Computing..");
+		NGon nm = new NGon();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("N-Gon Perimeter Calculator");
+		System.out.println("Enter # of sides:");
+		int n = sc.nextInt();
+		System.out.println("Enter measurement of each side: ");
+		double m = sc. nextDouble();
+		nm.getP(n,m);
 	}//getRectanglePerimeter
 	
 	public static void getNGonArea(){
-		System.out.println("Computing..");
+		NGon nm = new NGon();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("N-Gon Perimeter Calculator");
+		System.out.println("Enter # of sides:");
+		int n = sc.nextInt();
+		System.out.println("Enter measurement of each side: ");
+		double m = sc. nextDouble();
+		nm.getA(n,m);
 	}//getRectangleArea
 	
 	
