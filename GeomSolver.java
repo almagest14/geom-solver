@@ -34,8 +34,8 @@ public class GeomSolver{
 		System.out.println("Find the \n<1>Circumference\n<2>Area");
 		int ch = sc.nextInt();
 		switch(ch){
-			case 1: getCircumference();
-			case 2: getCircleArea();
+			case 1: getCircumference(); break;
+			case 2: getCircleArea(); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}
 	}//circleOption
@@ -46,17 +46,19 @@ public class GeomSolver{
 		System.out.println("Find the \n<1>Perimeter\n<2>Area");
 		int ch = sc.nextInt();
 		switch(ch){
-			case 1: getPolygonPerimeter(shape);
-			case 2: getPolygonArea(shape);
+			case 1: getPolygonPerimeter(shape); break;
+			case 2: getPolygonArea(shape); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}		
 	
 	}//polygonOption
 	
 	public static void getCircumference(){
+		System.out.println("Computing..");
 	}//getCircumference
 	
 	public static void getCircleArea(){
+		System.out.println("Computing..");
 	}//getCircleArea
 	
 	public static void getPolygonPerimeter(int sh){
@@ -85,27 +87,35 @@ public class GeomSolver{
 	}//getPolygonArea
 	
 	public static void getTrianglePerimeter(){
+		System.out.println("Computing..");
 	}//getTrianglePerimeter
 	
 	public static void getTriangleArea(){
+		System.out.println("Computing..");
 	}//getTriangleArea
 	
 	public static void getSquarePerimeter(){
+		System.out.println("Computing..");
 	}//getSquarePerimeter
 	
 	public static void getSquareArea(){
+		System.out.println("Computing..");
 	}//getSquareArea
 	
 	public static void getRectanglePerimeter(){
+		System.out.println("Computing..");
 	}//getRectanglePerimeter
 	
 	public static void getRectangleArea(){
+		System.out.println("Computing..");
 	}//getRectangleArea
 	
 	public static void getNGonPerimeter(){
+		System.out.println("Computing..");
 	}//getRectanglePerimeter
 	
 	public static void getNGonArea(){
+		System.out.println("Computing..");
 	}//getRectangleArea
 	
 	
