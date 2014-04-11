@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class geomsolver{
+public class Circle{
 
 	public static double circumf=0;
 	public static double area = 0;
 	public static double diameter = 0;
 	
 	public static void main(String[] args){
-		getCircleArea();	
+		//getCircleArea();	
 	}
 	
 	public static void getCircumference(){
@@ -43,7 +43,7 @@ public class geomsolver{
 		catch(InputMismatchException ime) {
 		System.out.println("Invalid input. Try Again.");
 		in.next();
-		}:
+		}
 		
 		
 	}//getCircleArea

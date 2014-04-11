@@ -33,9 +33,10 @@ public class GeomSolver{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Find the \n<1>Circumference\n<2>Area");
 		int ch = sc.nextInt();
+		Circle c = new Circle();
 		switch(ch){
-			case 1: getCircumference(); break;
-			case 2: getCircleArea(); break;
+			case 1: c.getCircumference(); break;
+			case 2: c.getCircleArea(); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}
 	}//circleOption
@@ -75,14 +76,7 @@ public class GeomSolver{
 		}
 	}//rectangleOption
 	
-	public static void getCircumference(){
-		System.out.println("Computing..");
-	}//getCircumference
-	
-	public static void getCircleArea(){
-		System.out.println("Computing..");
-	}//getCircleArea
-	
+
 	public static void getPolygonPerimeter(int sh){
 	
 		switch(sh){
