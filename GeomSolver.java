@@ -131,15 +131,18 @@ public class GeomSolver{
 		Scanner input = new Scanner(System.in);
  
 		System.out.print("Enter your square's side length: ");
-		double length = input.nextDouble();
-  
-		
-		System.out.println("Your square's area is " + length*4);
+ double length = input.nextDouble();
+  System.out.println("Your square's area is " + length*4);
 
 	}//getSquarePerimeter
 	
 	public static void getSquareArea(){
 		System.out.println("Computing..");
+		Scanner input = new Scanner(System.in);
+ 
+		System.out.print("Enter your square's side length: ");
+ double length = input.nextDouble();
+  System.out.println("Your square's area is " + length*length);
 	}//getSquareArea
 	
 	public static void getRectanglePerimeter(){
