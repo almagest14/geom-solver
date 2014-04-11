@@ -41,7 +41,7 @@ public class GeomSolver{
 	}//circleOption
 	public static void TriangleOption(){
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Find the \n<1>Perimeter<2>Area");
+	System.out.println("Find the \n<1>Perimeter\n<2>Area");
 		int ch = sc.nextInt();
 		switch(ch){
 			case 1: getTrianglePerimeter(); break;
@@ -98,7 +98,8 @@ public class GeomSolver{
 	
 	}//getPolygonArea
 	
-	public static void getTrianglePerimeter(){Scanner input = new Scanner(System.in);
+	public static void getTrianglePerimeter(){
+		Scanner input = new Scanner(System.in);
 		System.out.print("Enter Length of First Side :");
         double a = input.nextDouble();
         System.out.print("Enter Length of Second Side :");
@@ -123,7 +124,18 @@ public class GeomSolver{
 	}//getTriangleArea
 	
 	public static void getSquarePerimeter(){
+
 		System.out.println("Computing..");
+
+		
+		Scanner input = new Scanner(System.in);
+ 
+		System.out.print("Enter your square's side length: ");
+		double length = input.nextDouble();
+  
+		
+		System.out.println("Your square's area is " + length*4);
+
 	}//getSquarePerimeter
 	
 	public static void getSquareArea(){
